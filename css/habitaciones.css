@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:wght@300&family=Montserrat:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    
+    background: #272727;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/fondop.jpg);
+    background-size: cover;
+    background-position:center ;
+    /* background-size: 100%;
+    background-repeat:no-repeat ; */
+}
+.nav{
+    height: 120px;
+    background: #272727;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: all 0.5s ease;
+}
+.filtro{
+    font-weight: lighter;
+    text-align: center;
+    padding: 200px 50px;
+    text-decoration: none;
+}
+
+.iconn{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(16deg) brightness(104%) contrast(101%);
+
+}
+
+
+.nav.active{
+    height: 80px;
+}
+.nav.active .menu a{
+    color: #fff;
+    
+}
+.nav.active .menu a:hover{
+    padding: 5px 10px;
+    background: #fff;
+    color: rgb(37, 76, 79);
+    border-radius: 15px;
+}
+
+.menu{
+    display: flex;
+}
+.menu li{
+    padding-top: 15px;
+    list-style: none;
+    margin: 10px;
+    font-size: 17pt;
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.menu li a:hover{
+    padding: 5px 10px;
+    background: rgb(37, 76, 79);
+    color: #fff;
+    border-radius: 15px;
+}
+
+
+/* DESCRIPCION */
+.descrip{
+    background: #272727;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.cfooter{
+    padding: 10px;
+    background: #272727;
+    width: 100%;
+}
+.logof{
+   width: 105px;
+}
+.cfooter p{
+    margin-top: 27px;
+    color: #fff;
+} 
+.redes{
+    margin-top: 13px;
+}
+.imgredes{
+    margin: 8px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(16deg) brightness(104%) contrast(101%);
+}
+
+

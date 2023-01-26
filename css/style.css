@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:wght@300&family=Montserrat:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    
+    background: #ffffff;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0)),url(../img/fondop.jpg);
+    background-size: cover;
+    background-position:center ;
+    /* background-size: 100%;
+    background-repeat:no-repeat ; */
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: all 0.5s ease;
+}
+h1, h2{
+    font-size: 70pt;
+    font-family: 'Lobster', cursive;
+}
+.filtro{
+    text-align: center;
+    padding: 200px 50px;
+    color: white ;
+    text-decoration: none;
+}
+
+
+.nav.active{
+    background: #272727;
+}
+.nav.active .menu a{
+    color: #fff;
+    
+}
+.nav.active .menu a:hover{
+    padding: 5px 10px;
+    background: #fff;
+    color: rgb(37, 76, 79);
+    border-radius: 15px;
+}
+
+
+.menu{
+    display: flex;
+}
+.menu li{
+    padding-top: 15px;
+    list-style: none;
+    margin: 10px;
+    font-size: 17pt;
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.menu li a:hover{
+    padding: 5px 10px;
+    background: rgb(37, 76, 79);
+    color: #fff;
+    border-radius: 15px;
+}
+
+
+/* banner */
+.btnreserva{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background:rgb(37, 76, 79);
+    /* rgb(81, 112, 114) */
+    color: #fff;
+}
+.bannerpa{
+    display: flex;
+    justify-content: center;
+}
+.banner{
+    color: #ffffff;
+    background: #272727;
+    padding: 27px;
+    border-radius: 10px;
+    width: 70%;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 4px 10px rgb(37, 76, 79);
+}
+.imglogo{
+    margin-right: 4%;
+}
+
+
+
+
+/* Seccion Somos */
+.somos{
+    margin-top: 70px;
+    width: 75%;
+}
+.video{
+    border: 2PX solid rgb(37, 76, 79);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    
+
+}
+.infsomos{
+    padding: 25px;
+    margin: 40px;
+}
+
+.tsomos{
+    margin-top: 30px;
+    font-size: 49pt;
+    font-weight: bold;
+    color: rgb(88, 152, 159);
+    border-bottom: 7px solid #272727;
+}
+.lineah{
+    width: 280px;
+    height: 8px;
+}
+.psomos{
+    font-size: 15pt;
+    color: #272727;
+
+}
+.isomos{
+    margin-left: 60px;
+    border-radius: 10px;
+    padding: 3px;
+    border: solid;
+    border-color: #0072BB;
+}
+
+
+
+
+
+/* servicios */
+.imgfond{
+    background-image: linear-gradient(#272727c1,#272727c1),url(../img/img7.jpg);
+    background-size: cover;
+    background-position:center ;
+
+}
+.servicio{
+    margin-top: 70px;
+    width: 70%;
+}
+
+.servicio h3{
+    display: inline-block;
+    position: relative;
+    font-size: 35pt ;
+    font-weight: bolder;
+    font-style: italic;
+    margin-top: 30px;
+    margin-bottom: 55px;
+    color: rgb(255, 255, 255);
+}
+.servicio h3::after,h3::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color:currentColor ;
+    top: 0.6em;
+    transform: scale(0);
+    transition: all 0.2s ease-in;
+}
+.servicio h3:hover::after,h3:hover::before{
+    transform: scale(1);
+}
+.servicio h3::after{
+    left: -140px;
+}
+.servicio h3::before{
+    right: -140px;
+}
+.servicio img, h4{
+    margin: 15px;
+    font: bolder;
+}
+.setcard1{
+    height: 300px;
+}
+.setcard2{
+    justify-content: center;
+    height: 260px;
+    padding-bottom: 300px;
+}
+.parrac{
+    display: none;
+} 
+.cards{
+    /* border:5px solid #0072BB;
+    border-top-left-radius: 650px;
+    border-top-right-radius: 600px;
+    border-bottom-left-radius: 650px;
+    border-bottom-right-radius: 650px; */
+    font-weight: bold;
+    height: 165px;
+    margin: 10px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(16deg) brightness(104%) contrast(101%);
+
+    transition: all 0.5s;
+    
+} 
+.cards:hover {
+    display: block;
+    border:1px solid ;
+    border-radius: 10px;
+    height: 270px; 
+}
+.cards:hover .parrac{
+    display: block;
+}
+
+
+
+/* * maps * */
+.maps{
+    margin: 0;
+    background: #272727;
+}
+
+
+
+/* FOOTER */
+.cfooter{
+    padding: 10px;
+    background: #272727;
+    width: 100%;
+}
+.logof{
+   width: 105px;
+}
+.cfooter p{
+    margin-top: 27px;
+    color: #fff;
+} 
+.redes{
+    margin-top: 13px;
+}
+.imgredes{
+    margin: 8px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(16deg) brightness(104%) contrast(101%);
+}
+
+
