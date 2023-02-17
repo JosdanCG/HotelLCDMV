@@ -386,16 +386,3 @@ h1, h2{
         height: 240%;
     }
 }
-/* @media screen and (max-height:900px){
-    .filtro{
-        padding-bottom: 130px;
-    }
-}
-@media screen and (max-height:1000px){
-    .filtro h1{
-        padding-top: 25vh;
-    }
-    .bannerpa{
-        padding-top: 25vh;
-    }
-} */
