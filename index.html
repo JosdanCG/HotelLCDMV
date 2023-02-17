@@ -13,52 +13,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
+
 </head>
 
 <body>
 
     <header>
         <nav class="nav">
+
+
             <div class="logo"><img src="img/svg/LOGO.svg" alt="" height="60px"></div>
 
+            <input title="check" type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i>
+                    <img src="img/eventos/menu.png" height="60px" alt="">
+                </i>
+            </label>
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="habitaciones.html">Habitaciones</a></li>
                 <li><a href="eventos.html">Eventos</a></li>
                 <li><a href="restaurante.html">Restaurante</a></li>
-
             </ul>
+
+
+
         </nav>
         <section class="filtro">
             <h1>La Casa de mi </h1>
             <h2>Viejo</h2>
 
-        </section>
+            <!-- banner -->
+            <div class=" text-center bannerpa">
+                <div class="row banner">
 
-        <!-- banner -->
-        <div class="container text-start bannerpa">
-            <div class="row banner">
-
-                <div class="col col-lg-2 imglogo">
-                    <img src="img/svg/LOGO.svg" alt="" height="100%">
-                </div>
-                <div class="col-md-7">
-                    Relajarte en familia, en pareja o solo? Aqui te esperamos
-                </div>
-                <div class="col col-lg-2">
-                    <a href="" class="btnreserva">Reservar</a>
+                    <div class="col-md-2 imglogo">
+                        <img src="img/svg/LOGO.svg" alt="" height="80px">
+                    </div>
+                    <div class="col-md-5">
+                        Relajarte en familia, en pareja o solo? Aqui te esperamos
+                    </div>
+                    <div class="col-md-3 mt-4">
+                        <a href="#servicios" class="btnreserva">Servicios</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+
+
 
 
 
 
         <!-- SOMOS -->
-        <div class="container text-left somos">
+        <div class="container cont_somos ">
             <div class="row">
 
-                <div class="col-6 infsomos">
+                <div class="col-md-5 infsomos">
                     <h3 class="tsomos">Nosotros</h3>
                     <br>
                     <div class="psomos">
@@ -77,7 +90,7 @@
                     </div>
 
                 </div>
-                <div class="col-4 infsomos">
+                <div class="col-md infsomos text-center">
                     <video class="video" src="video/vi1.mp4" controls autoplay muted loop height="550 px"></video>
                     <!-- <img class="isomos" src="img/aperi.jpeg" alt="" > -->
                 </div>
@@ -88,26 +101,26 @@
 
 
         <!-- SERVICIOS -->
-        <div class="imgfond">
+        <div id="servicios" class="imgfond">
 
-            <div class="container text-center servicio">
+            <div class=" container text-center servicio">
                 <h3>Servicios</h3>
                 <div class="row setcard1">
-                    <div class="col-sm cards">
-                        <img src="img/servicios/hotel.png" alt="" height="80px" class="imgs">
+                    <div class="col-md cards">
+                        <img src="img/servicios/cama.png" alt="" height="80px" class="imgs">
                         <h4>Hospedaje</h4>
-                        <p class="parrac">Contamos con habitaciones familiares(4 personas), matrimonial(2 personas)
+                        <p class="parrac">Contamos con habitaciones matrimoniales, dobles y triples
                             incluidos cable, wifi y baño. </p>
                     </div>
-                    <div class="col-sm cards">
-                        <img src="img/servicios/dinner.png" alt="" height="80px" class="imgs">
+                    <div class="col-md cards">
+                        <img src="img/servicios/comida.png" alt="" height="80px" class="imgs">
                         <h4>Restaurante</h4>
                         <p class="parrac">Contamos con una amplia carta, que son platos de la localidad, y para los
-                            huespedes el desayuno es gratis.
+                            te esperamos!.
                         </p>
                     </div>
-                    <div class="col-sm cards text-center">
-                        <img src="img/servicios/nadador.png" alt="" height="80px" class="imgs">
+                    <div class="col-md cards ">
+                        <img src="img/servicios/nadar.png" alt="" height="80px" class="imgs">
                         <h4>Piscina</h4>
                         <p class="parrac">Contamos con 2 piscinas, una para los mas pequeños, y una mas
                             grande para los jovenes y adultos.
@@ -115,15 +128,15 @@
                     </div>
                 </div>
                 <div class="row setcard2">
-                    <div class="col-4 cards">
+                    <div class="col-md cards2">
                         <img src="img/servicios/salud.png" alt="" height="80px" class="imgs">
                         <h4>Barra</h4>
                         <p class="parrac">Si vienes solo y estresado, que mejor que alivianarte y ahogar
                             las penas en nuestra barra. </p>
                     </div>
-                    <div class="col-4 cards">
+                    <div class="col-md cards2">
                         <img src="img/servicios/mirador.png" alt="" height="80px" class="imgs">
-                        <h4>Mesanini</h4>
+                        <h4>Mezzanine</h4>
                         <p class="parrac">Un lugar donde podras tener una excelente vista no tan solo
                             del local sino del pueblo.
                         </p>
@@ -138,17 +151,22 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
-        <div class="cfooter">
-            <div class="container  ">
+        <div class="cfooter ">
+            <div class="container text-center ">
                 <div class="row ">
-                    <div class=" text-start logof ">
-                        <img src="img/svg/LOGO.svg" alt="" height="60px">
 
+                    <div class="col-md-7 text-center cfooter-logo">
+                        <div class="row">
+                            <div class="col-md-3  logof ">
+                                <img src="img/svg/LOGO.svg" alt="" height="60px">
+                            </div>
+                            <div class="col-md-9">
+                                <p>La Casa de mi viejo © 2002-2023</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-6  text-start">
-                        <p>La Casa de mi viejo © 2002-2023</p>
-                    </div>
-                    <div class="col-4 text-end redes">
+
+                    <div class="col-md-4  redes">
                         <img class="imgredes" src="img/networks/facebook.png" alt="" height="30px">
                         <img class="imgredes" src="img/networks/insta.png" alt="" height="30px">
                         <img class="imgredes" src="img/networks/tik-tok.png" alt="" height="30px">

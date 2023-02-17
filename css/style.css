@@ -30,7 +30,15 @@ header{
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    /* position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: all 0.5s ease; */
 }
 h1, h2{
     font-size: 70pt;
@@ -39,8 +47,19 @@ h1, h2{
 .filtro{
     text-align: center;
     padding: 200px 50px;
+    padding-bottom: 50px;
     color: white ;
     text-decoration: none;
+}
+
+.checkbtn{
+    line-height: 80px;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
 }
 
 
@@ -60,9 +79,11 @@ h1, h2{
 
 
 .menu{
-    display: flex;
+    display: inline-flex;
 }
 .menu li{
+    
+    display: block;
     padding-top: 15px;
     list-style: none;
     margin: 10px;
@@ -82,6 +103,13 @@ h1, h2{
 }
 
 
+.bar_btn{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+
 /* banner */
 .btnreserva{
     text-decoration: none;
@@ -92,6 +120,7 @@ h1, h2{
     color: #fff;
 }
 .bannerpa{
+    padding-top: 12%;
     display: flex;
     justify-content: center;
 }
@@ -100,7 +129,6 @@ h1, h2{
     background: #272727;
     padding: 27px;
     border-radius: 10px;
-    width: 70%;
     font-size: 15pt;
     display: flex;
     justify-content: center;
@@ -114,10 +142,7 @@ h1, h2{
 
 
 /* Seccion Somos */
-.somos{
-    margin-top: 70px;
-    width: 75%;
-}
+
 .video{
     border: 2PX solid rgb(37, 76, 79);
     border-top-left-radius: 20px;
@@ -169,37 +194,18 @@ h1, h2{
 }
 .servicio{
     margin-top: 70px;
-    width: 70%;
+    
 }
 
 .servicio h3{
     display: inline-block;
-    position: relative;
+    position: static;
     font-size: 35pt ;
     font-weight: bolder;
     font-style: italic;
     margin-top: 30px;
     margin-bottom: 55px;
     color: rgb(255, 255, 255);
-}
-.servicio h3::after,h3::before{
-    content: '';
-    position: absolute;
-    width: 120px;
-    height: 3px;
-    background-color:currentColor ;
-    top: 0.6em;
-    transform: scale(0);
-    transition: all 0.2s ease-in;
-}
-.servicio h3:hover::after,h3:hover::before{
-    transform: scale(1);
-}
-.servicio h3::after{
-    left: -140px;
-}
-.servicio h3::before{
-    right: -140px;
 }
 .servicio img, h4{
     margin: 15px;
@@ -222,11 +228,23 @@ h1, h2{
     border-top-right-radius: 600px;
     border-bottom-left-radius: 650px;
     border-bottom-right-radius: 650px; */
-    font-weight: bold;
+    
     height: 165px;
     margin: 10px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(16deg) brightness(104%) contrast(101%);
-
+    color: #fff;
+    transition: all 0.5s;
+    
+} 
+.cards2{
+    /* border:5px solid #0072BB;
+    border-top-left-radius: 650px;
+    border-top-right-radius: 600px;
+    border-bottom-left-radius: 650px;
+    border-bottom-right-radius: 650px; */
+    
+    height: 165px;
+    margin: 10px;
+    color: #fff;
     transition: all 0.5s;
     
 } 
@@ -234,9 +252,18 @@ h1, h2{
     display: block;
     border:1px solid ;
     border-radius: 10px;
+    height: 100%; 
+}
+.cards2:hover {
+    display: block;
+    border:1px solid ;
+    border-radius: 10px;
     height: 270px; 
 }
 .cards:hover .parrac{
+    display: block;
+}
+.cards2:hover .parrac{
     display: block;
 }
 
@@ -249,15 +276,14 @@ h1, h2{
 }
 
 
-
 /* FOOTER */
 .cfooter{
     padding: 10px;
     background: #272727;
     width: 100%;
 }
-.logof{
-   width: 105px;
+.cfooter-logo{
+    display: flex;
 }
 .cfooter p{
     margin-top: 27px;
@@ -272,3 +298,104 @@ h1, h2{
 }
 
 
+
+
+@media screen and (max-width:900px){
+    .logo{
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        top: 80px;
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        background: #272727;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+     }
+
+    nav ul li{
+        display: none;
+        margin: 50px 0px;
+        padding-top: 15px;
+        /* list-style: none;
+        font-size: 17pt; */
+        line-height: 30px;
+    } 
+    nav ul li a{
+        font-size: 19pt;
+    } 
+    nav a:hover, li a.active{
+        background: none;
+        color: #fff;
+    } 
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .menu{
+        display:list-item;
+    }
+    .menu li{
+        margin-top: 20px;
+    }
+    .descrip{
+        margin-left: 0;
+    } 
+    
+    h1, h2 {
+        font-size: 50pt;
+    }
+    .bannerpa{
+        padding-top: 90px;
+        display: flex;
+        justify-content: center;
+    }
+    .infsomos {
+        padding: 25px;
+        margin: 0;
+    }
+    .servicio{
+        width: 70%;
+    }
+
+    .setcard1{
+        height: 270px;
+    }
+    .setcard2{
+        margin-top: 600px;
+        height: 270px;
+    } 
+    .cards{
+        height: 100%;
+        padding-bottom: 100px;
+    }
+    .cards2{
+        height: 100%;
+        padding-bottom: 270px;
+    }
+    
+    .imgfond {
+        background:linear-gradient(#272727c1,#272727c1) ;
+        background-size: cover;
+        background-position: center;
+        height: 240%;
+    }
+}
+@media screen and (max-height:900px){
+    .filtro{
+        padding-bottom: 130px;
+    }
+}
+@media screen and (max-height:1000px){
+    .filtro h1{
+        padding-top: 25vh;
+    }
+    .bannerpa{
+        padding-top: 25vh;
+    }
+}

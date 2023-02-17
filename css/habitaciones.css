@@ -13,18 +13,18 @@ body {
     background: #272727;
 }
 
-header{
+.header_habitaciones{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/fondop.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/habitaciones/room2.jpg);
     background-size: cover;
     background-position:center ;
     /* background-size: 100%;
     background-repeat:no-repeat ; */
 }
-.nav{
-    height: 120px;
-    background: #272727;
+nav{
+    /*height: 120px;
+    background: #272727;*/
     position: fixed;
     width: 100%;
     display: flex;
@@ -32,23 +32,38 @@ header{
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease; 
 }
 .filtro{
     font-weight: lighter;
     text-align: center;
     padding: 200px 50px;
     text-decoration: none;
+    color: #fff;
+}
+.bar_btn{
+    margin-right: 20px;
+    cursor: pointer;
 }
 
-.iconn{
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(16deg) brightness(104%) contrast(101%);
-
+.checkbtn{
+    line-height: 80px;
+    float: right;
+    cursor: pointer;
+    display: none;
 }
+#check{
+    display: none;
+}
+
+
+
 
 
 .nav.active{
     height: 80px;
+    background: #272727;
+    z-index: 10;
 }
 .nav.active .menu a{
     color: #fff;
@@ -62,9 +77,11 @@ header{
 }
 
 .menu{
-    display: flex;
+    display: inline-flex;
 }
 .menu li{
+    
+    display: block;
     padding-top: 15px;
     list-style: none;
     margin: 10px;
@@ -84,10 +101,318 @@ header{
 }
 
 
+
+
+
+
 /* DESCRIPCION */
 .descrip{
+    width: 90%;
+    padding: 30px;
+    margin-left: 80px;
     background: #272727;
-    height: 300px;
+    color: #fff; 
+}
+.descripcion{
+    margin: 20px auto;
+}
+.line{
+    border-left: 5px solid #58989f;
+}
+.line p{
+    margin-left: 40px;
+    font-size: 2ch;
+    /* font-weight: bold;  */
+}
+.line a{
+    font-weight: lighter;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 25px;
+    background: rgb(37, 76, 79);
+    color: #fff;
+    margin-left: 40px;
+    font-size: 1em;
+    /* font-weight: bold;  */
+}
+.btn{
+    width: 25%;
+}
+
+.btn:hover{
+    
+    font-weight: lighter;
+    background: #fff;
+    color: rgb(37, 76, 79);
+}
+
+/* HABITACIONES */
+.habitaciones{
+    padding: 3%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.titulo{ 
+    font-size: 5ch;
+}
+
+.tipohab{
+    padding-top: 6%;
+    width: 80%;
+    margin: 0 auto;
+}
+.tipohab img{
+    width: 90%;
+    border-radius: 3%;
+}
+
+.texthab{
+    border-left: 3px solid rgb(37, 76, 79);
+    /* width: 90%; */
+}
+.texthab h1{
+    font-weight: 500;
+    color: rgb(37, 76, 79);
+    width: 85%;
+    margin: 0 auto;
+}
+.texthab p{
+    padding-top: 20px;
+    font-size: 120%;
+    margin: 0 auto;
+    width: 85%;
+}
+
+
+/* formulario */
+.formulari{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/habitaciones/reservas.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position:center ;
+    font-size: 2ex;
+}
+.cont_form{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.slogan{
+    border-radius: 13px 0 0 13px ;
+    padding: 30px;
+    background: rgb(37, 76, 79);
+    color: #fff; 
+    margin-bottom: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+.parte_reser{
+    background: rgb(254, 254, 254);
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+    border-radius:0 13px 13px 0 ;
+}
+.parte_2{
+    padding-top: 6%;
+    padding-bottom: 32px;
+}
+.campos{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #272727;
+    width: 100%; 
+}
+.btnwha{ 
+    padding: 8px;
+    border-radius: 25px;
+    width: 120px;
+    background:rgb(37, 76, 79);
+    border:1px solid rgb(37, 76, 79);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.enviarform{
+    display: inline-flex;
+    width: 100%;
+}
+.btnwha:hover{ 
+    padding: 8px;
+    border-radius: 25px;
+    width: 120px;
+    background:rgb(215, 222, 223);
+    border:1px solid rgb(37, 76, 79);
+    color: rgb(0, 0, 0);
+}
+.warning{
+    color: red;
+}
+ 
+@media screen and (max-width:900px) {
+    
+    .logo{
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        top: 80px;
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        background: #272727;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+     }
+
+    nav ul li{
+        display: none;
+        margin: 50px 0px;
+        padding-top: 15px;
+        /* list-style: none;
+        font-size: 17pt; */
+        line-height: 30px;
+    } 
+    nav ul li a{
+        font-size: 19pt;
+    } 
+    nav a:hover, li a.active{
+        background: none;
+        color: #fff;
+    } 
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .menu{
+        display:list-item;
+    }
+    .menu li{
+        margin-top: 40px;
+    }
+
+    .descrip{
+        width: 100%;
+        margin-left: 0;
+    }
+    .des {
+        max-height: max-content;
+        background: #272727;
+        color: #fff; 
+    } 
+    .descripcion {
+        padding-bottom: 30px;
+    } 
+    .btn{
+        width: 70%;
+        margin-top: 10px;
+    }
+    .cont_form{
+        width: 70%;
+    }
+    .slogan{
+        border-radius: 20px 20px 0 0;
+        margin-bottom: 0px;
+    }
+    .parte_reser{
+        margin-top: 0;
+        border-radius: 0 0 20px 20px;
+    }
+
+
+
+
+    /* -----------------------------Eventos---------------- */
+    .parte_reser {
+        padding: 20px;
+    }
+    /* .descripcion{
+        margin: 20px auto;
+    }
+    .line{
+        border-left: 5px solid #58989f;
+        height: 90px;
+    } */
+    /* .line p{
+        margin-left: 40px;
+        font-size: 2ch;
+        /* font-weight: bold;  */
+    /* }
+    .line a{
+        font-weight: lighter;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 25px;
+        background: rgb(37, 76, 79);
+        color: #fff;
+        margin-left: 40px;
+        font-size: 1em;
+        /* font-weight: bold;  
+    } */ 
+} 
+
+
+
+
+
+
+/* -------------------------------------Eventos--------------------------------- */
+    
+.header_eventos{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/eventos/img12.PNG);
+    background-size: cover;
+    background-position:center ;
+    
+}
+.conta{
+    color: #272727;
+    padding: 60px;
+    background: #fff;
+}
+.galeria{
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+}
+.galeria .box-img figure{
+    height: 100%;
+    width: 100%;
+}
+.galeria .box-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.galeria .box-img:nth-child(1){
+    grid-column: span 2;
+}
+.galeria .box-img:nth-child(4){
+    grid-column: span 2;
+}
+.formulario_evento{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/eventos/webp.webp);
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position:center ;
+    font-size: 2ex;
 }
 
 
@@ -98,6 +423,117 @@ header{
 
 
 
+
+
+
+/* -------------------------------------Restaurante--------------------------------- */
+    
+.header_rest{
+    
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/eventos/img08.jpg);
+    background-size: cover;
+    background-position:center ;
+}
+
+.btnwha_evento{ 
+    padding: 8px;
+    border-radius: 25px;
+    width: 100%;
+    background:rgb(37, 76, 79);
+    border:1px solid rgb(37, 76, 79);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.btnwha_evento:hover{ 
+    padding: 8px;
+    border-radius: 25px;
+    width: 100%;
+    background:rgb(215, 222, 223);
+    border:1px solid rgb(37, 76, 79);
+    color: rgb(0, 0, 0);
+}
+.fondo_rest{
+    background: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/restaurante/fondo.jpg);
+    background-size: cover;
+    background-position:center ; */
+}
+.slide_container{
+    max-width: 1120px;
+    width: 100%;
+
+}
+.slide_content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 29px;
+}
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+.image_content,
+.card_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.card_content{
+    padding: 25px;
+}
+.image_content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #58989f;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #58989f;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+.card_image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+.card_image .card_img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #58989f;
+}
 
 
 
@@ -113,8 +549,8 @@ header{
     background: #272727;
     width: 100%;
 }
-.logof{
-   width: 105px;
+.cfooter-logo{
+    display: flex;
 }
 .cfooter p{
     margin-top: 27px;

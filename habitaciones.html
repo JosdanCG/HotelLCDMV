@@ -17,42 +17,171 @@
 
 <body>
 
-    <header>
+    <header class="header_habitaciones">
         <nav class="nav">
+
+
             <div class="logo"><img src="img/svg/LOGO.svg" alt="" height="60px"></div>
 
+            <input title="check" type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i>
+                    <img src="img/eventos/menu.png" height="60px" alt="">
+                </i>
+            </label>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="habitaciones.html">Habitaciones</a></li>
                 <li><a href="eventos.html">Eventos</a></li>
                 <li><a href="restaurante.html">Restaurante</a></li>
             </ul>
+
+
+
         </nav>
         <section class="filtro">
 
-            <img class="iconn" src="img/servicios/sleep.png" alt="" height="250px">
+            <img class="iconn" src="img/servicios/siesta.png" alt="" height="250px">
             <h3>Habitaciones</h3>
 
         </section>
-        <div class="descrip">
 
+
+        <div class="container text-start descrip ">
+            <div class="row des">
+                <div class=" col-lg-5 descripcion">
+                    <h1>Habitaciones con un ambiente tranquilo donde podras relajarte y disfrutar</h1>
+                </div>
+                <div class="col-lg-7 ">
+                    <div class="line">
+                        <p>Contamos con 3 tipos de habitaciones, matrimoniales, dobles y triples para que tengan la
+                            mayor comodidad para el disfrute de nuestros clientes, cada habitacion cuenta con tv y wifi.
+                        </p>
+                        <a href="#habita" for="habita" class=" btn">Habitaciones</a>
+                        <a href="#formulario" class=" btn ">Reservar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="habita" class="habitaciones">
+            <h1 class="text-center titulob ">Otras habitaciones</h1>
+
+            <div class="row tipohab">
+
+                <div class=" imghab col-md-6 mt-3">
+                    <img src="img/habitaciones/room1.jpg" alt="">
+                </div>
+                <!-- <div class=" numero">
+
+                </div> -->
+                <div class=" texthab col-md-6 mt-3">
+                    <h1>Matrimonial</h1>
+                    <p>Disfrute de su estancia en nuestra habitacion con cama para parejas, con un ambiente
+                        tranquilo y
+                        romantico, disfrutando del buen clima en la piscina.<br>
+                        El precio de esta habitacion es de S/. 70.00.<br>
+
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row tipohab">
+
+                <div class="col-md-6 imghab mt-3">
+                    <img src="img/habitaciones/room4.jpg" alt="">
+                </div>
+                <!-- <div class=" numero">
+
+                </div> -->
+                <div class="col-md-6 texthab mt-3">
+                    <h1>Dobles</h1>
+                    <p>Comoda y agradable, si estas de viaje con amigos o familia, esta opcion es la mejor para poder
+                        descansar<br>
+                        El precio de esta habitacion es de S/. 80.00.</p>
+                </div>
+            </div>
+            <div class="row tipohab">
+
+                <div class="col-md-6 imghab mt-3">
+                    <img src="img/habitaciones/room5.jpeg" alt="">
+                </div>
+                <!-- <div class=" numero">
+
+                </div> -->
+                <div class="col-md-6 texthab mt-3">
+                    <h1>Triples</h1>
+                    <p>Comodidad para toda la familia e<br>
+                        El precio de esta habitacion es de S/. 120.00.</p>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------- formulario -->
+        <div id="formulario" class="formulari">
+
+            <div class=" row  cont_form ">
+                <div class="col-md-2 slogan">
+                    <p>Para que te escapes de todo</p>
+                    <img src="img/habitaciones/hoguera.png" alt="" width="140px">
+                </div>
+
+                <div class="col-md-4 parte_reser ">
+
+                    <p>Nombre completo</p>
+                    <input name="nombre" id="nombre" type="text" class="campos form-control nom" required>
+
+                    <div class="row parte_2">
+                        <div class="col">
+                            <p>Tipo habitacion</p>
+                            <select name="tipo" id="tipo" class="campos form-select" required>
+                                <option value="0" disabled selected hidden>Seleccione</option>
+                                <option value="1">Matrimonial</option>
+                                <option value="2">Dobles</option>
+                                <option value="3">Triples</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <p>Fecha de Ingreso</p>
+                            <input name="fecha" id="fecha" type="date" class="campos form-control" required>
+                        </div>
+                    </div>
+                    <div class="row enviarform">
+                        <div class="col">
+                            <button id="submit" class="btnwha">Enviar</button>
+                        </div>
+                        <div class="col text-end">
+                            <p class="warning" id="warning"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
 
 
 
 
-        <div class="cfooter">
-            <div class="container  ">
-                <div class="row ">
-                    <div class=" text-start logof ">
-                        <img src="img/svg/LOGO.svg" alt="" height="60px">
 
+
+        <div class="cfooter ">
+            <div class="container text-center ">
+                <div class="row ">
+
+                    <div class="col-md-7 text-center cfooter-logo">
+                        <div class="row">
+                            <div class="col-md-3  logof ">
+                                <img src="img/svg/LOGO.svg" alt="" height="60px">
+                            </div>
+                            <div class="col-md-9">
+                                <p>La Casa de mi viejo © 2002-2023</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-6  text-start">
-                        <p>La Casa de mi viejo © 2002-2023</p>
-                    </div>
-                    <div class="col-4 text-end redes">
+
+                    <div class="col-md-4  redes">
                         <img class="imgredes" src="img/networks/facebook.png" alt="" height="30px">
                         <img class="imgredes" src="img/networks/insta.png" alt="" height="30px">
                         <img class="imgredes" src="img/networks/tik-tok.png" alt="" height="30px">
