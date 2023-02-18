@@ -80,7 +80,7 @@
                                 <div class="image_content">
                                     <span class="overlay"></span>
                                     <div class="card_image">
-                                        <img src="img/restaurante/pachamanca.jpg" alt="" class="card_img">
+                                        <img src="img/restaurante/pachamanca.webp" alt="" class="card_img">
                                     </div>
                                 </div>
                                 <div class="card_content">
@@ -93,7 +93,7 @@
                                 <div class="image_content">
                                     <span class="overlay"></span>
                                     <div class="card_image">
-                                        <img src="img/restaurante/cau-cau.jpeg" alt="" class="card_img">
+                                        <img src="img/restaurante/cau-cau.webp" alt="" class="card_img">
                                     </div>
                                 </div>
                                 <div class="card_content">
@@ -106,7 +106,7 @@
                                 <div class="image_content">
                                     <span class="overlay"></span>
                                     <div class="card_image">
-                                        <img src="img/restaurante/lomo-saltado.jpg" alt="" class="card_img">
+                                        <img src="img/restaurante/lomo-saltado.webp" alt="" class="card_img">
                                     </div>
                                 </div>
                                 <div class="card_content">
@@ -119,7 +119,7 @@
                                 <div class="image_content">
                                     <span class="overlay"></span>
                                     <div class="card_image">
-                                        <img src="img/restaurante/talalrin-verde.jpg" alt="" class="card_img">
+                                        <img src="img/restaurante/talalrin-verde.webp" alt="" class="card_img">
                                     </div>
                                 </div>
                                 <div class="card_content">
@@ -132,7 +132,7 @@
                                 <div class="image_content">
                                     <span class="overlay"></span>
                                     <div class="card_image">
-                                        <img src="img/restaurante/cuy-chactado.jpg" alt="" class="card_img">
+                                        <img src="img/restaurante/cuy-chactado.webp" alt="" class="card_img">
                                     </div>
                                 </div>
                                 <div class="card_content">
@@ -145,7 +145,7 @@
                                 <div class="image_content">
                                     <span class="overlay"></span>
                                     <div class="card_image">
-                                        <img src="img/restaurante/patasca.jpg" alt="" class="card_img">
+                                        <img src="img/restaurante/patasca.webp" alt="" class="card_img">
                                     </div>
                                 </div>
                                 <div class="card_content">
@@ -158,7 +158,7 @@
                                 <div class="image_content">
                                     <span class="overlay"></span>
                                     <div class="card_image">
-                                        <img src="img/restaurante/trucha-frita.jpg" alt="" class="card_img">
+                                        <img src="img/restaurante/trucha-frita.webp" alt="" class="card_img">
                                     </div>
                                 </div>
                                 <div class="card_content">
@@ -173,7 +173,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </div>startling-bonbon-f176be
+        </div>
 
 
         <!-- ---------------------------------------BEBIDAD -->
@@ -213,7 +213,31 @@
 
 
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="menu.js"></script>
+    <script>
+        var swiper = new Swiper(".slide_content", {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            loop: true,
+            centerSlide: 'true',
+            fade: 'true',
+            grabCursor: "true",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            },
+        });</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
         </script>

@@ -5,32 +5,10 @@ const Swarning=document.querySelector('warning')
 
   
 window.addEventListener('scroll', ()=>{
-    nav.classList.toggle('active', window.scrollY >0)
+    nav.classList.toggle('active', window.scrollY > 0)
+    
 })
-var swiper = new Swiper(".slide_content", {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    loop: true,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor:"true",
-    pagination: {
-      el: ".swiper-pagination",
-        clickable: true,
-      dynamicBullets: true,
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        950: {
-            slidesPerView: 3,
-        },
-    },
-});
+
 
 const enviarDatos = (e) => {
     // 924796668
@@ -59,6 +37,31 @@ const enviarDatos = (e) => {
 }
 
 habitac.addEventListener('click', enviarDatos);
+
+var swiper = new Swiper(".slide_content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor:"true",
+    pagination: {
+      el: ".swiper-pagination",
+        clickable: true,
+      dynamicBullets: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+});
 
 
 

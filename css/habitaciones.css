@@ -16,17 +16,18 @@ body {
 .header_habitaciones{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/habitaciones/room2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/habitaciones/room2.webp);
     background-size: cover;
     background-position:center ;
     /* background-size: 100%;
     background-repeat:no-repeat ; */
 }
 nav{
-    /*height: 120px;
-    background: #272727;*/
+    height: 120px;
+    background: #272727;
     position: fixed;
     width: 100%;
+    background: #272727;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,11 +64,6 @@ nav{
 .nav.active{
     height: 80px;
     background: #272727;
-    z-index: 10;
-}
-.nav.active .menu a{
-    color: #fff;
-    
 }
 .nav.active .menu a:hover{
     padding: 5px 10px;
@@ -186,7 +182,7 @@ nav{
 
 /* formulario */
 .formulari{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/habitaciones/reservas.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/habitaciones/reservas.webp);
     width: 100%;
     background-size: cover;
     background-position:center ;
@@ -318,42 +314,16 @@ nav{
     .slogan{
         border-radius: 20px 20px 0 0;
         margin-bottom: 0px;
+        padding: 15px;
     }
     .parte_reser{
         margin-top: 0;
         border-radius: 0 0 20px 20px;
     }
 
-
-
-
-    /* -----------------------------Eventos---------------- */
     .parte_reser {
         padding: 20px;
     }
-    /* .descripcion{
-        margin: 20px auto;
-    }
-    .line{
-        border-left: 5px solid #58989f;
-        height: 90px;
-    } */
-    /* .line p{
-        margin-left: 40px;
-        font-size: 2ch;
-        /* font-weight: bold;  */
-    /* }
-    .line a{
-        font-weight: lighter;
-        text-decoration: none;
-        padding: 15px;
-        border-radius: 25px;
-        background: rgb(37, 76, 79);
-        color: #fff;
-        margin-left: 40px;
-        font-size: 1em;
-        /* font-weight: bold;  
-    } */ 
 } 
 
 
@@ -367,7 +337,7 @@ nav{
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/eventos/img12.PNG);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/eventos/img12.webp);
     background-size: cover;
     background-position:center ;
     
@@ -432,7 +402,7 @@ nav{
     
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/eventos/img08.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/eventos/img08.webp);
     background-size: cover;
     background-position:center ;
 }
@@ -456,7 +426,7 @@ nav{
 }
 .fondo_rest{
     padding-top: 70px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/restaurante/fondo.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/restaurante/fondo.webp);
     width: 100%;
     height: 100vh;
     background-size: cover;
