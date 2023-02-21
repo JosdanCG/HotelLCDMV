@@ -183,7 +183,7 @@ nav{
 
 /* formulario */
 .formulari{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/habitaciones/reservas.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0.587)),url(../img/habitaciones/reservas-min.jpg);
     width: 100%;
     background-size: cover;
     background-position:center ;
