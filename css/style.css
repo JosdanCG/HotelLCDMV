@@ -284,6 +284,10 @@ h1, h2{
 } 
 .redes{
     margin-top: 13px;
+    text-decoration: none;
+}
+.redes a{
+    text-decoration: none;
 }
 .imgredes{
     margin: 8px;
