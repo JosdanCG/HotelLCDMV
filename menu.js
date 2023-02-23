@@ -12,7 +12,7 @@ window.addEventListener('scroll', ()=>{
 
 const enviarDatos = (e) => {
     // 924796668
-    const telefono = "924796668";
+    const telefono = "977118806";
     let nombre = document.querySelector('#nombre').value;
     let tipo = document.querySelector('#tipo');
     var selected = tipo.options[tipo.selectedIndex].text;
